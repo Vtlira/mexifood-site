@@ -11,8 +11,8 @@
     
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Playfair+Display:ital,wght@1,800&family=Praise&family=Roboto:wght@300;400&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&family=Playfair+Display:ital,wght@1,800&family=Praise&family=Roboto+Slab&family=Roboto:wght@900&display=swap" rel="stylesheet">
 
 
 
@@ -28,8 +28,8 @@
             <span id="topo">
 
                   <div class="logo">MEXIFOOD</div>
-                  <a href="#home" style="background-color: green;">Home</a>
-                  <a href="#cardapio" style="background-color: white;">Cardápio</a>
+                  <a href="#home" style="background-color: green;">HOME</a>
+                  <a href="#cardapio" style="background-color: white;">CARDÁPIO</a>
                   <a href="#cadastro" style="background-color: red;">PEÇA JÁ</a>
             </span>
             <section id="home"></section>
@@ -149,11 +149,11 @@
 
                 <fieldset>
                         <section id="cadastro"> 
-                            <h2 style="color: black">PEDIDO - DELIVERY</h2>
-                            <label style="color: black;"><strong>Nome Completo</strong></label>
+                            <h2 style="color: #ba0000;">PEDIDO - DELIVERY</h2>
+                            <label style="color:#000000;; font-size: 20px;"><strong>Nome Completo</strong></label>
                             <input type="text" name="nome" id="nome" maxlength="80" required><br><br>
                         
-                            <label style="color: black;"><Strong>Endereço</Strong></label>
+                            <label style="color: #000000;;"><Strong>Endereço</Strong></label>
                             <input type="text" name="endereco" id="endereco" maxlength="120" required>
                         </section>
                     
@@ -166,7 +166,14 @@
                         <p>
                             <label>
                                 <input type="checkbox" id="produto4" name="produto[]" value="Quesadilla"/>
-                                <span>Quesadilha</span>
+                                <span>QUESADILHA</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" id="produto3" name="produto[]"        value="Burrito" />
+                                <span>BURRITO</span>
                             </label>
                         </p>
                         
@@ -175,22 +182,17 @@
                             <label>
                             
                             <input type="checkbox" id="produto" name="produto[]"        value="Taco"  />
-                            <span class="">Taco</span>
+                            <span class="">TACO</span>
                             
                             </label>
                         </p>
                         <p>
                             <label>
                             <input type="checkbox" id="produto2" name="produto[]"        value="Nachos" />
-                            <span>Nachos</span>
+                            <span>NACHOS</span>
                             </label>
                         </p>
-                        <p>
-                            <label>
-                                <input type="checkbox" id="produto3" name="produto[]"        value="Burrito" />
-                                <span>Burrito</span>
-                            </label>
-                        </p>
+                        
                      
                 
                     </span>   
@@ -205,34 +207,34 @@
                             <label>
                             
                             <input type="checkbox" id="produto" name="produto[]"        value="Corona"  />
-                            <span>Corona Extra</span>
+                            <span>CORONA EXTRA</span>
                             
                             </label>
                         </p>
                         <p>
                             <label>
                             <input type="checkbox" id="produto2" name="produto[]"        value="Kiro Switchel" />
-                            <span>Kiro Switvhel</span>
+                            <span>KIRO SWITVHEL</span>
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" id="produto3" name="produto[]"        value="Budweiser" />
-                                <span>Budweiser</span>
+                                <span>BUDWEISER</span>
                             </label>
                         </p>
                         <p>
                             <label>
                                 <input type="checkbox" id="produto4" name="produto[]" value="Agua" />
-                                <span>Agua Mineral</span>
+                                <span>AGUA MINERAL</span>
                             </label>
                         </p>
                 
                     </div>  
 
 
-                    <label>Qual a forma de pagamento?</label>
-                    <select class="browser-default"  name="pagamento" id="pagamento" required style="background-color: rgb(219, 215, 215);">
+                    <label style="font-family: Verdana, Geneva, Tahoma, sans-serif; color: #ba0000; font-size: 20px;">Qual a forma de pagamento?</label>
+                    <select class="browser-default"  name="pagamento" id="pagamento" required style="background-color: rgb(229 229 229);">
                     <option value="" disabled selected>Selecione</option>
                     <option >Dinheiro</option>
                     <option >Cartão de Crédito</option>
@@ -243,7 +245,7 @@
                 </fieldset>  
                     
                     <div>
-                        <label style="color: rgb(14, 0, 0);"><Strong>Use este espaço para descrever(sugestões,observações etc)</Strong></label><br>
+                        <label style="color: #000000; font-family: monospace; font-size: 15px;"><Strong>Use este espaço para descrever(sugestões,observações etc)</Strong></label><br>
                         <textarea name="mensagem" id="mensagem" cols="60" rows="10" style="background-color: rgb(219, 215, 215);"></textarea>
                         <button type="submit" id="botao">Fazer o Pedido!</button>
                         
