@@ -45,6 +45,7 @@ body{
     position: relative;
     top: 6px;
     color: black;
+    font-family: 'Roboto';
 }
 
 
@@ -134,7 +135,8 @@ h1{
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.418)
+    background-color: #ffffffbf;
+    BOX-SHADOW: 0px 2px var(--primarylight);
     
     
     
@@ -145,12 +147,43 @@ h1{
     color: #000000;
 }
 
+.checkfood p label span{  /*checkbox comida*/
+    color: rgb(110, 0, 0);
+    font-family: 'Roboto Slab', serif;
+    
+}
+.checkfood p label span::before{  /*checkbox comida*/
+    
+    box-sizing: initial;
+     border: 2px solid #921212;
+    
+}
+
+.checkfood p label span:not(.lever):before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 3px solid #000000;
+    border-radius: 1px;
+    margin-top: 0px;
+    -webkit-transition: .2s;
+    transition: .2s;
+   
+}
+
+
 .checkdrink{         
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.418)
+    background-color: #ffffffbf;
+    BOX-SHADOW: 0px 2px var(--primarylight);
 }
 
 .checkdrink p label{     
@@ -159,8 +192,43 @@ h1{
     
 }
 
+.checkdrink p label span{  /*checkbox comida*/
+    color: rgb(110, 0, 0);
+    font-family: 'Roboto Slab', serif;
+    
+}
+.checkdrink p label span::before{  /*checkbox comida*/
+    
+    box-sizing: initial;
+     border: 2px solid #921212;
+    
+}
+
+.checkdrink p label span:not(.lever):before{
+
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 0;
+    border: 3px solid #000000;
+    border-radius: 1px;
+    margin-top: 0px;
+    -webkit-transition: .2s;
+    transition: .2s;
+   
+}
+
+
+
 h2{
     text-align: center;
+    color: #ba0000;
+    background-color:#000000b8 ;
+    margin: auto;
+    
     
 }
 
@@ -176,13 +244,34 @@ fieldset{
 #cadastro{
     
     border-radius: 10px;
-    background-color: rgba(128, 128, 128, 0.418);
+    background-color: #ffffffbf;
     
 }
+
+#cadastro label{
+    font-size: 20px;
+}
+
+#cadastro input[type=text]:not(.browser-default){
+    border-bottom: 1px solid #000000;
+}
+
+#botao{
+    
+        border: outset;
+        border-radius: 10px;
+        font-size: 20px;
+        font-family: 'Playfair Display', serif;
+        
+}
+
 
 @media screen and (min-height: 1000px){
     fieldset{
         background-size: 200%;
+     }
+     .cardapiodrink img, .cardapiofood img{
+         width: 110px;
      }
 }
 
@@ -244,7 +333,7 @@ fieldset{
 
       @media screen and (max-width: 340px){
           #topo a{
-            margin: 8px;
+            margin: 0PX;
           }
           .carddescricao p{
             margin-top: 70px;   
